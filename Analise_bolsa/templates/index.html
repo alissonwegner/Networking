@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta de Ações</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Consulta de Ações</h1>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Open</th>
+                    <th>High</th>
+                    <th>Low</th>
+                    <th>Price</th>
+                    <th>Volume</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ data | safe }}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
